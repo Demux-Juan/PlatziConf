@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/drawable-v24/ic_banner_conference_foreground.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/drawable-v24/ic_banner_foreground.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/drawable/shape_parrafo.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/drawable/shape_topico.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/activity_splashscreen.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/fragment_schedule.xml" value="0.14427083333333332" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/fragment_schedule_detail_dialog.xml" value="0.16666666666666666" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/fragment_speakers.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/fragment_spearkes_detail_dialog.xml" value="0.16666666666666666" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/fragment_ubication.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/fragment_ubication_detail_dialog.xml" value="0.16666666666666666" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/item_schedule.xml" value="0.22" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/layout/item_speaker.xml" value="0.1" />
+        <entry key="..\:/PC/ProgramasAndroidStudio/PlatziConf/app/src/main/res/menu/bnv_menu.xml" value="0.16666666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
