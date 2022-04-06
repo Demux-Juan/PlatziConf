@@ -7,12 +7,77 @@
         <item name="colorPrimaryDark">@color/md_orange_700</item>
         <item name="colorAccent">@color/md_light_blue_A200</item>
         <item name="colorControlHighlight">@color/md_orange_700</item>
-        <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:colorBackground">@color/md_orange_50</item>
+
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:windowFullscreen">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
 
+    <!--TEMAS PERSONALIZADOS-->
+
+    <style name="Theme.PlatziConf2" parent="Theme.Material3.Light.NoActionBar">
+        <!--Color de fondo de la barra de navegacion-->
+        <item name="colorSurface">@color/md_orange_700</item>
+        <!--Color de iconos no activos de la barra de navegacion-->
+        <item name="colorOnSurfaceVariant">@color/md_orange_200</item>
+        <!--Color del texto debajo del icono de la barra de navegacion-->
+        <item name="colorOnSurface">@color/md_orange_200</item>
+        <!--Color de icono activo de la barra de navegacion-->
+        <item name="colorOnSecondaryContainer">@color/md_orange_700</item>
+        <!--Tamaño de icono-->
+        <item name="itemIconSize">25dp</item>
+        <!--Color de fondo de la app-->
+        <item name="android:colorBackground">@color/md_orange_50</item>
+        <!--Color principal de la app, tambien en la difuminacion de tope de la app y la barra-->
+        <item name="colorPrimary">@color/md_orange_800</item>
+        <!--Color de la status bar-->
+        <item name="colorPrimaryDark">@color/md_black_1000_75</item>
+        <!--Color de la navigation bar-->
+        <item name="android:navigationBarColor">@color/md_black_1000_75</item>
+        <!--Color indicador activo de icono de la navigation bar-->
+        <item name="colorSecondaryContainer">@color/md_orange_200</item>
+        <!--Color para los detalles dentro de los componentes dentro de la app-->
+        <item name="colorAccent">@color/md_light_blue_A200</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+
+    <style name="Theme.PlatziConf3" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--Color de fondo de la barra de navegacion-->
+        <item name="colorSurface">@color/md_orange_600</item>
+        <!--Color de iconos no activos de la barra de navegacion-->
+        <item name="colorOnSurfaceVariant">@color/md_orange_50</item>
+        <!--Color del texto debajo del icono de la barra de navegacion-->
+        <item name="colorOnSurface">@color/white</item>
+        <!--Tamaño de icono-->
+        <item name="itemIconSize">25dp</item>
+        <!--Color de fondo de la app-->
+        <item name="android:colorBackground">@color/md_orange_50</item>
+        <!--Color principal de la app, tambien en la difuminacion de tope de la app y la barra-->
+        <item name="colorPrimary">@color/white</item>
+        <!--Color de la status bar-->
+        <item name="colorPrimaryDark">@color/md_black_1000_75</item>
+        <!--Color de la navigation bar-->
+        <item name="android:navigationBarColor">@color/md_black_1000_75</item>
+        <!--Color para los detalles dentro de los componentes dentro de la app-->
+        <item name="colorAccent">@color/md_light_blue_A200</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
 
 </resources>

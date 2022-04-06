@@ -3,7 +3,7 @@
 
     <dimen name="altoLogoPlatzi">50dp</dimen>
     <dimen name="toolbarAlto">35dp</dimen>
-    <dimen name="cardcornerRadius">4dp</dimen>
+    <dimen name="cardcornerRadius">10dp</dimen>
     <dimen name="altoImageViewHome">150dp</dimen>
     <dimen name="tamañoTitulo">25sp</dimen>
     <dimen name="tamañoSubtitulo">20sp</dimen>
