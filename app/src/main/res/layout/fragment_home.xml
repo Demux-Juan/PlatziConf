@@ -35,13 +35,15 @@
 
 
                     <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="25dp"
                         android:id="@+id/ivHome"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/ic_banner_foreground" />
+                        android:src="@drawable/banner1" />
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="5dp"
+                        android:layout_height="@dimen/anchoView"
                         android:background="@color/md_pink_50" />
 
                     <TextView
@@ -75,9 +77,9 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 app:cardCornerRadius="@dimen/cardcornerRadius"
-                app:cardElevation="0dp">
+                app:cardElevation="4dp">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -89,14 +91,16 @@
 
 
                     <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="25dp"
                         android:id="@+id/ivAsist"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/ic_banner_foreground" />
+                        android:src="@drawable/banner2" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="5dp"
+                        android:layout_height="@dimen/anchoView"
                         android:background="@color/md_pink_50" />
 
                     <TextView
@@ -144,14 +148,16 @@
 
 
                     <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="25dp"
                         android:id="@+id/ivInfo"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/altoImageViewHome"
-                        android:src="@drawable/ic_banner_foreground" />
+                        android:src="@drawable/banner3" />
 
                     <View
                         android:layout_width="match_parent"
-                        android:layout_height="5dp"
+                        android:layout_height="@dimen/anchoView"
                         android:background="@color/md_pink_50" />
                     <TextView
                         android:layout_width="match_parent"
