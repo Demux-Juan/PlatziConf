@@ -5,6 +5,7 @@
     <dimen name="toolbarAlto">35dp</dimen>
     <dimen name="cardcornerRadius">10dp</dimen>
     <dimen name="altoImageViewHome">150dp</dimen>
+    <dimen name="anchoView">10dp</dimen>
     <dimen name="tamañoTitulo">25sp</dimen>
     <dimen name="tamañoSubtitulo">20sp</dimen>
     <dimen name="itemScheduleTitulo">30sp</dimen>
