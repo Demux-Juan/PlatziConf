@@ -55,7 +55,8 @@
 
     <style name="Theme.PlatziConf3" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!--Color de fondo de la barra de navegacion-->
-        <item name="colorSurface">@color/md_orange_600</item>
+        <!--<item name="colorSurface">@color/md_orange_600</item>-->
+        <item name="colorSurface">@color/colorOnPrimary</item>
         <!--Color de iconos no activos de la barra de navegacion-->
         <item name="colorOnSurfaceVariant">@color/md_orange_50</item>
         <!--Color del texto debajo del icono de la barra de navegacion-->
