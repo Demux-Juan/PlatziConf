@@ -5,9 +5,11 @@ buildscript {
     }
     dependencies {
 //dependencia necesaria para poder usar safe args para la navegacion
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.4.1")
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.4.2")
+        classpath 'com.google.gms:google-services:4.3.10'
     }
 }
+
 
 plugins {
     id 'com.android.application' version '7.1.2' apply false
