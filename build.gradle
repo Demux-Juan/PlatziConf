@@ -4,8 +4,9 @@ buildscript {
         google()
     }
     dependencies {
-//dependencia necesaria para poder usar safe args para la navegacion
+        //dependencia necesaria para poder usar safe args para la navegacion
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.4.2")
+        //dependencia necesaria para firebase
         classpath 'com.google.gms:google-services:4.3.10'
     }
 }
