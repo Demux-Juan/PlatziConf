@@ -14,19 +14,18 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val analytics:FirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        val analytics: FirebaseAnalytics = FirebaseAnalytics.getInstance(this)
         val bundle = Bundle()
-        bundle.putString("message","Hola mundo")
-        analytics.logEvent("InitScreen",bundle)
+        bundle.putString("message", "Hola mundo")
+        analytics.logEvent("InitScreen", bundle)
 
 
+        //Agrega contenido a firebase desde código
+/*
         val jsonArr = JSONArray(
             "[\n" +
                     "  {\n" +
@@ -191,13 +190,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-
-
-
-
-
-
-
+*/
 
 
     }
