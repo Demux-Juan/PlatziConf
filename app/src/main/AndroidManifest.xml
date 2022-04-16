@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PlatziConf3">
         <activity
-            android:name=".ui.activities.SplashscreenActivity"
+            android:name="com.example.platziconf.view.ui.activities.SplashscreenActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
