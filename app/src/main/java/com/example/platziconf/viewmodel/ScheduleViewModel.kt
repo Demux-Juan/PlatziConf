@@ -2,7 +2,6 @@ package com.example.platziconf.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 import com.example.platziconf.model.Conference
 import com.example.platziconf.network.Callback
 import com.example.platziconf.network.FirestoreServices
@@ -19,7 +18,7 @@ class ScheduleViewModel: ViewModel() {
     }
 
     fun getScheduleFromFirebase() {
-        firestoreService.getSchedule(object : Callback<List<Conference>> {
+        firestoreService.getSchedule(object: Callback<List<Conference>> {
 
             override fun onSuccess(result: List<Conference>?) {
                 listSchedule.postValue(result)

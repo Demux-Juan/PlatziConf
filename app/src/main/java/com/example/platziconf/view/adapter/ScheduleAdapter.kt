@@ -34,8 +34,7 @@ class ScheduleAdapter(val scheduleListener: ScheduleListener) :
         val hourFormat = simpleDateFormat.format(conference.datetime)
 
         holder.tvConferenceHour.text = hourFormat
-        holder.tvConferenceAMPM.text =
-            simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
+        holder.tvConferenceAMPM.text = simpleDateFormatAMPM.format(conference.datetime).toUpperCase()
 
         holder.itemView.setOnClickListener {
             scheduleListener.onConferenceClicked(conference, position)
