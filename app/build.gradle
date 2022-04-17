@@ -50,4 +50,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
+    //implementacion para agregar url en un recyclerview
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //nos permite agregar el ciclo de vida para los viewmodels
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
 }
