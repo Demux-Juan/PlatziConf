@@ -1,12 +1,13 @@
 package com.example.platziconf.viewmodel
 
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.example.platziconf.model.Speaker
 import com.example.platziconf.network.Callback
 import com.example.platziconf.network.FirestoreServices
 import java.lang.Exception
 
-class SpeakersViewModel {
+class SpeakersViewModel: ViewModel() {
 
     val firestoreService = FirestoreServices()
     var listSpeaker: MutableLiveData<List<Speaker>> = MutableLiveData()

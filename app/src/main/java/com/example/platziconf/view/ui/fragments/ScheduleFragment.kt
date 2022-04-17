@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.platziconf.R
 import com.example.platziconf.model.Conference
@@ -34,7 +34,6 @@ class ScheduleFragment : Fragment(), ScheduleListener {
         viewModel.refresh()
         scheduleAdapter = ScheduleAdapter(this)
 
-        //falta
         rvSchedule.apply{
             layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL,false)
             adapter = scheduleAdapter
@@ -60,7 +59,9 @@ class ScheduleFragment : Fragment(), ScheduleListener {
 
 
     override fun onConferenceClicked(conference: Conference, position: Int) {
-        TODO("Not yet implemented")
+        val bundle = bundleOf("conference" to conference)
+        findNavController().navigate(R.id.scheduleDetailFragmentDialog,bundle)
+
     }
 
 }
