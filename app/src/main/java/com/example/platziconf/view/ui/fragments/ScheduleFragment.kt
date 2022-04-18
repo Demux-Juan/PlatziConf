@@ -43,7 +43,7 @@ class ScheduleFragment : Fragment(), ScheduleListener {
         observeViewModel()
     }
 
-    private fun observeViewModel() {
+     fun observeViewModel() {
         viewModel.listSchedule.observe(viewLifecycleOwner, Observer<List<Conference>>{
             schedule -> scheduleAdapter.updateDate(schedule)
         })

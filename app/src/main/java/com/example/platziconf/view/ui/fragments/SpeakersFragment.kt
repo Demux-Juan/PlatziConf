@@ -9,6 +9,7 @@ import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.platziconf.R
 import com.example.platziconf.model.Speaker
@@ -21,9 +22,13 @@ import kotlinx.android.synthetic.main.fragment_speakers.*
 class SpeakersFragment : Fragment(), SpeakerListener {
 
     private lateinit var speakerAdapter: SpeakerAdapter
-    private lateinit var viewModel : SpeakersViewModel
+    private lateinit var viewModel: SpeakersViewModel
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return inflater.inflate(R.layout.fragment_speakers, container, false)
     }
 
@@ -35,8 +40,8 @@ class SpeakersFragment : Fragment(), SpeakerListener {
         speakerAdapter = SpeakerAdapter(this)
 
 
-        rvSpeakers.apply{
-            layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL,false)
+        rvSpeakers.apply {
+            layoutManager = GridLayoutManager(context, 2)
             adapter = speakerAdapter
         }
 
@@ -44,24 +49,24 @@ class SpeakersFragment : Fragment(), SpeakerListener {
         observeViewModel()
     }
 
-    private fun observeViewModel() {
-        viewModel.listSpeaker.observe(viewLifecycleOwner, Observer<List<Speaker>>{
-                speaker -> speakerAdapter.updateDate(speaker)
+     fun observeViewModel() {
+        viewModel.listSpeaker.observe(viewLifecycleOwner, Observer<List<Speaker>> { speakers ->
+            speakers.let {
+                speakerAdapter.updateDate(speakers)
+            }
         })
 
-        viewModel.isLoding.observe(viewLifecycleOwner,Observer<Boolean>{
-            if(it != null)
+        viewModel.isLoding.observe(viewLifecycleOwner, Observer<Boolean> {
+            if (it != null)
                 rlBaseSpeaker.visibility = View.INVISIBLE
 
         })
     }
 
 
-
-
     override fun onSpeakerClicked(speaker: Speaker, position: Int) {
         val bundle = bundleOf("speaker" to speaker)
-        findNavController().navigate(R.id.scheduleDetailFragmentDialog,bundle)
+        findNavController().navigate(R.id.speakersDetailFragmentDialog, bundle)
 
     }
 

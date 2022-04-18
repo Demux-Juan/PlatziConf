@@ -2,8 +2,11 @@ package com.example.platziconf.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.Navigation
+import androidx.navigation.ui.NavigationUI
 import com.example.platziconf.R
 import com.google.firebase.analytics.FirebaseAnalytics
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putString("message", "Hola mundo")
         analytics.logEvent("InitScreen", bundle)
-
+        configNav()
 
         //Agrega contenido a firebase desde código
 /*
@@ -187,5 +190,14 @@ class MainActivity : AppCompatActivity() {
 */
 
 
+    }
+
+    fun configNav() {
+
+
+        NavigationUI.setupWithNavController(
+            bnvMenu,
+            Navigation.findNavController(this, R.id.fragContent)
+        )
     }
 }
